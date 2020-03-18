@@ -3,9 +3,10 @@ import './UserOutput.css'
 
 const userOutput = (props) => {
     return (
-        <div className="UserOutput">
-            <p>i'm person and i'm  years old</p>
-            <p>i'm person and i'm  years old</p>
+        <div className="userOutput">
+            <p>{props.fillText}</p>
+            <p>i'm <h1>{props.name}</h1> and i'm make a test</p>
+            <p>{props.children}</p>
         </div>
     )
 }
